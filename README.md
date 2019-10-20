@@ -2,7 +2,9 @@
 
 In this project, the King James Version (KJV) Bible was analyzed with Pyspark and Jupyter Notebook.
 
-In rdd_kjv.ipynb notebook, Pyspark RDD was created for the KJV text file. Major RDD operations include:
+### rdd_kjv.ipynb
+
+In this notebook, Pyspark RDD was created for the KJV text file. Major RDD operations include:
 
   (1) filter out the empty lines;
 
@@ -13,9 +15,11 @@ In rdd_kjv.ipynb notebook, Pyspark RDD was created for the KJV text file. Major 
   (4) remove the punctuations at the end or the beginning of some words so that the same words are not treated as different words due to association with a punctuation mark (regex objects were complied for this purpose);
  
   (5) perform MapReduce operations and count the occurances of words for different scenarios: no case conversion, converting all words to lower case, converting all word to lower case except for a few special words such as 'God', 'Lord', 'Spirit'.
+  
 
+### spark_dataframe_sql_kjv.ipynb
 
-In spark_dataframe_sql_kjv.ipynb notebook, RDD was converted to DataFrame. Major operations on the dataframe include:
+In this notebook, RDD was converted to DataFrame. Major operations on the dataframe include:
 
   (1) index was generated for ease of operation. While in RDD, index was added using zipWithIndex() method after finding that the monotonically_increasing_id() method for dataframe could not guarantee the consecutiveness of row id's;
 
