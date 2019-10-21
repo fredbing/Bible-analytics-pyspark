@@ -29,7 +29,7 @@ In this notebook, RDD was converted to DataFrame. Major operations on the datafr
 
   (4) columns of chapter ID's and book ID's were added to the dataframe of the Bible by joining the dataframes on the common indices;
   
-  (5) Spark SQL TempView was created for sql queries;
+  (5) Spark SQL TempView was created for SQL queries;
 
   (6) SQL queries were also performed on the dataframe with dataframe functions.
 
